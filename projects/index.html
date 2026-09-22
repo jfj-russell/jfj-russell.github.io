@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=5">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/index.html"><span>Jude</span> <span>Russell</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/index.html">Home</a>
+        <a href="/work/index.html">Research</a>
+        <a href="/projects/index.html" aria-current="page">Projects</a>
+        <a href="/cv/index.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-intro reading-column">
+      <h1>Projects</h1>
+    </header>
+
+    <div class="project-list">
+      <article class="project-entry">
+        <figure class="project-media media" data-fallback>
+          <img src="/assets/images/projects/calaero-cad.png" alt="CAD model of the Cal Aerospace SAE aircraft">
+          <div class="asset-fallback">Final aircraft assembly — CAD<br><small>assets/images/projects/calaero-cad.png</small></div>
+        </figure>
+        <div>
+          <h2>Cal Aerospace SAE aircraft</h2>
+          <p class="item-meta">UC Berkeley · Structures team · 2023–24</p>
+          <p>Cal Aerospace SAE is a student-run team that designs, builds and flies a large competition aircraft. I worked on the structure of the 15 ft aircraft, with a particular focus on compressive strength under heavy landing loads.</p>
+          <p>Using SolidWorks and Ansys finite-element analysis, we improved landing-gear performance by about 30%. I also handled timelines, design reviews, prototyping and test planning, working across additive and subtractive manufacture in aluminium, printed polymers and carbon fibre. The team later placed third at SAE Aero Design West in April 2025.</p>
+        </div>
+      </article>
+
+      <article class="project-entry project-entry--split">
+        <div class="project-media project-media--stack">
+          <figure class="media media--inset media--rounded" data-fallback>
+            <img src="/assets/images/projects/mot-setup.png" alt="Rubidium saturated-absorption spectroscopy setup">
+            <div class="asset-fallback">Spectroscopy setup<br><small>mot-setup.png</small></div>
+          </figure>
+          <figure class="media media--rounded" data-fallback>
+            <img src="/assets/images/projects/mot-spectrum.png" alt="Measured saturated-absorption spectrum of the rubidium D2 line">
+            <div class="asset-fallback">Rubidium D2 spectrum<br><small>mot-spectrum.png</small></div>
+          </figure>
+        </div>
+        <div class="project-content">
+          <h2>Saturated-absorption spectroscopy of rubidium</h2>
+          <p class="item-meta">Centre for Cold Matter · Imperial College London · July 2026</p>
+          <p>I operated a 780 nm pump–probe spectroscopy system used to stabilise a diode laser for a rubidium magneto-optical trap. Counterpropagating beams select atoms with nearly zero axial velocity, revealing narrow Doppler-free resonances inside the much broader room-temperature absorption profile.</p>
+          <p>I aligned the free-space optics, recorded the <sup>85</sup>Rb and <sup>87</sup>Rb D2 spectra and investigated frequency drift. The relevant resonance was then used with modulation transfer spectroscopy to produce a dispersive error signal for locking the cooling laser. This type of atomic reference is central to laser cooling, atom trapping and precision measurement.</p>
+        </div>
+      </article>
+
+      <article class="project-entry">
+        <figure class="project-media media" data-fallback>
+          <img src="/assets/images/projects/sqd-presentation.jpg" alt="Jude Russell presenting the sample-based quantum diagonalization project">
+          <div class="asset-fallback">IOP project presentation<br><small>assets/images/projects/sqd-presentation.jpg</small></div>
+        </figure>
+        <div>
+          <h2>Ground-state energy estimation with SQD</h2>
+          <p class="item-meta">IBM Qiskit Fall Fest team project · 2025</p>
+          <p>We applied sample-based quantum diagonalization, a hybrid quantum–classical algorithm, to estimate the electronic ground-state energy of a water molecule. Quantum samples define a physically relevant subspace, while the final diagonalization is carried out classically within that reduced basis.</p>
+          <p>The estimate converged close to the classical reference and reached chemical accuracy — an energy error below 10<sup>−3</sup> Ha — after 18 iterations, with an approximately linear reduction in error. Methods of this kind aim to make molecular energy calculations useful on quantum hardware before full fault tolerance is available. We presented the project at an Institute of Physics event.</p>
+        </div>
+      </article>
+
+      <article class="project-entry">
+        <figure class="project-media media project-media--diagram" data-fallback>
+          <img src="/assets/images/projects/gkp-circuit.png" alt="Circuit for a GKP quantum error-correction protocol">
+          <div class="asset-fallback">GKP error-correction circuit<br><small>assets/images/projects/gkp-circuit.png</small></div>
+        </figure>
+        <div>
+          <h2>Surface–GKP quantum error correction</h2>
+          <p class="item-meta">Technical review · Quantum error correction</p>
+          <p>I reviewed how Gottesman–Kitaev–Preskill codes encode a logical qubit in the continuous phase space of an oscillator, and how those bosonic qubits can be concatenated with a surface code.</p>
+          <p>The combination is attractive because small displacement errors can be corrected at the oscillator level, while the surface code handles the remaining logical errors across many modes. This can substantially reduce the hardware overhead of fault-tolerant quantum computing. The project considered syndrome extraction, decoding, squeezing thresholds and implementations in trapped-ion, superconducting and photonic systems.</p>
+          <p><a class="text-link" href="/assets/documents/Jude_Russell_Surface_GKP_Quantum_Error_Correction.pdf" download>Jude Russell — Surface–GKP Quantum Error Correction</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© Jude Russell 2026</p></footer>
+</body>
+</html>

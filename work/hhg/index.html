@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>High-Harmonic Generation</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=5">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="research-detail">
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/index.html"><span>Jude</span> <span>Russell</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/index.html">Home</a>
+        <a href="/work/index.html" aria-current="page">Research</a>
+        <a href="/projects/index.html">Projects</a>
+        <a href="/cv/index.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-intro">
+      <h1>Quantum tunnelling without a barrier: phase-sensitive signatures in HHG</h1>
+    </header>
+
+    <section class="article-section">
+      <h2>Two-colour fields</h2>
+
+      <p>
+        High-harmonic generation occurs when an intense laser field releases an electron,
+        accelerates it and drives it back to its parent ion, producing short bursts of
+        high-frequency radiation. The usual semiclassical picture treats the release step
+        as tunnelling through a field-suppressed potential barrier, but the meaning of
+        tunnelling becomes less clear when that barrier disappears.
+      </p>
+
+      <p>
+        In this project, I studied fields built from a fundamental frequency and its
+        second harmonic. Their relative strength and phase can be varied to move between
+        different ionisation regimes, including configurations where tunnelling-like
+        dynamics persist without an instantaneous classical barrier.
+      </p>
+
+      <div class="equation" role="group" aria-label="E of t equals E one cosine omega t plus E two cosine two omega t plus phi">
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+          <mrow>
+            <mi>E</mi>
+            <mo stretchy="false">(</mo>
+            <mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo>=</mo>
+            <msub><mi>E</mi><mn>1</mn></msub>
+            <mi mathvariant="normal">cos</mi>
+            <mo stretchy="false">(</mo>
+            <mi>ω</mi><mi>t</mi>
+            <mo stretchy="false">)</mo>
+            <mo>+</mo>
+            <msub><mi>E</mi><mn>2</mn></msub>
+            <mi mathvariant="normal">cos</mi>
+            <mo stretchy="false">(</mo>
+            <mn>2</mn><mi>ω</mi><mi>t</mi>
+            <mo>+</mo><mi>φ</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </math>
+      </div>
+    </section>
+
+    <figure class="media"><img src="/assets/images/hhg/field-configuration.gif" alt="Animation of a two-colour electric field switchover"></figure>
+
+    <section class="article-section">
+      <h2>Phase-sensitive observables</h2>
+      <p>I extended a Julia simulation framework to calculate electron trajectories and quantum-path phase coefficients across a large set of two-colour fields. These coefficients describe how the phase of each harmonic changes with laser intensity.</p>
+      <p>Branches and cutoffs in the calculated phase response reveal changes in the underlying trajectories. The two-colour fields produced structures that do not appear in the familiar single-colour case, offering possible signatures for interpreting and controlling attosecond emission.</p>
+    </section>
+
+    <figure class="media"><img src="/assets/images/hhg/phase-coefficients-intensity.gif" alt="Animation of quantum-path phase coefficients versus laser intensity"></figure>
+
+    <section class="article-section">
+      <h2>Phase-coefficient surfaces</h2>
+      <p>I also calculated phase-coefficient surfaces over an independent grid of the two field components. The animation shows how their structure changes with harmonic number and with the order of the phase sensitivity. I think they look like dancing stingrays :)</p>
+    </section>
+
+    <figure class="media"><img src="/assets/images/hhg/phase-coefficients-surface.gif" alt="Animation of phase-coefficient surfaces over a two-colour field grid"></figure>
+
+    <section class="article-section">
+      <p>The project was supervised by Dr Emilio Pisanty and Anne Weber in <a href="https://www.attokings.com" rel="external">Atto@Kings</a> at King’s College London.</p>
+      <div class="thesis-link">
+        <img src="/assets/images/hhg/thesis-title-page.png" alt="Title page of the undergraduate thesis">
+        <div>
+          <h3>Quantum tunnelling without a barrier: phase-sensitive signatures in HHG</h3>
+          <p>A PDF of the thesis is available to download.</p>
+          <a class="text-link" href="/assets/documents/Jude_Russell_HHG_Thesis.pdf" download>Jude Russell — BSc Thesis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© Jude Russell 2026</p></footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Levitated Nanophysics</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=5">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="research-detail">
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/index.html"><span>Jude</span> <span>Russell</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/index.html">Home</a>
+        <a href="/work/index.html" aria-current="page">Research</a>
+        <a href="/projects/index.html">Projects</a>
+        <a href="/cv/index.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-intro">
+      <h1>Dancing levitated diamonds in a modified Paul trap</h1>
+    </header>
+
+    <section class="article-section">
+      <h2>The experiment</h2>
+      <p>Paul traps use oscillating electric fields to confine charged particles. In this experiment, microscopic diamonds were charged near a high-voltage needle and loaded into a modified trap. They were initially stable, but over several hours their motion became larger and more erratic before they eventually escaped.</p>
+      <p>The behaviour was first noticed while the apparatus was part of a public installation at <a href="https://london.sciencegallery.com/quantum" rel="external">Science Gallery London</a>. My project focused on measuring the change in motion and identifying a plausible physical cause, while working with difficult particle loading, high-voltage electrodes and a non-standard trap geometry.</p>
+    </section>
+
+    <figure class="media media--narrow media--rounded" data-fallback>
+      <img src="/assets/images/levitated/setup.jpg" alt="Modified Paul-trap experimental setup">
+      <div class="asset-fallback">Modified Paul-trap setup<br><small>assets/images/levitated/setup.jpg</small></div>
+    </figure>
+
+    <section class="article-section">
+      <h2>Tracking the particles</h2>
+      <p>I developed MATLAB software to follow the particles frame by frame, repeatedly recentering a small analysis window so that fast motion did not cause the tracker to lose them. The reconstructed trajectories showed tight confinement shortly after loading and much wider, slowly rotating motion around five hours later—the “dancing” behaviour that gave the project its name.</p>
+    </section>
+
+    <figure class="media media--narrow media--reduced-plot media--rounded" data-fallback>
+      <img src="/assets/images/levitated/particle-trajectories.png" alt="Tracked positions of two trapped particles approximately five hours after loading">
+      <div class="asset-fallback">Tracked particle positions<br><small>assets/images/levitated/particle-trajectories.png</small></div>
+    </figure>
+
+    <section class="article-section">
+      <h2>A possible loss of charge</h2>
+      <p>The power spectrum of the motion shifted to a slightly lower frequency as the confinement weakened. A simple Paul-trap simulation reproduced that direction of change when the particle’s charge-to-mass ratio was reduced.</p>
+      <p>Gradual charge loss is therefore a plausible explanation: a less strongly charged particle couples more weakly to the trapping field. Because charge was not measured directly, this remains an interpretation rather than a conclusive identification.</p>
+    </section>
+
+    <figure class="media media--narrow media--reduced-plot media--rounded" data-fallback>
+      <img src="/assets/images/levitated/power-spectrum.png" alt="Power spectral density of trapped-particle motion at two times">
+      <div class="asset-fallback">Power spectral density<br><small>assets/images/levitated/power-spectrum.png</small></div>
+    </figure>
+
+    <div class="article-section">
+      <p>This work was carried out through a King’s Undergraduate Research Fellowship with Professor James Millen in the <a href="https://levi-nano.com" rel="external">Levitated Nanophysics Group</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© Jude Russell 2026</p></footer>
+</body>
+</html>
