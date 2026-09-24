@@ -104,13 +104,21 @@ p {
   gap: 2rem;
 }
 
+.brand-heading {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
 .brand,
 .brand:visited,
 .brand:hover,
 .brand:focus,
 .brand:active {
   display: inline-flex;
-  width: 11.5rem;
+  width: 12.5rem;
   height: 5.15rem;
   align-items: center;
   justify-content: center;
@@ -216,7 +224,7 @@ main {
 }
 
 .page-intro--no-rule {
-  padding-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
   border-bottom: 0;
 }
 
