@@ -354,8 +354,8 @@ main {
 }
 
 .article-section h2 {
-  padding-bottom: 0.7rem;
-  border-bottom: 1.5px solid var(--line);
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .research-detail h1 {
@@ -576,6 +576,14 @@ main {
 .cv-section h2 {
   padding-bottom: 0.7rem;
   border-bottom: 1.5px solid var(--line);
+}
+
+.page-intro + .cv-section {
+  margin-top: 1.5rem;
+}
+
+.page-intro--no-rule:has(+ .cv-section) {
+  padding-bottom: 1.5rem;
 }
 
 .cv-list {
