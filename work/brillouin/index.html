@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multimode Brillouin Scattering in Optical Fibre</title>
+  <meta name="description"
+        content="Jude Russell's research on multimode Brillouin scattering in optical fibre, combining heterodyne spectroscopy with acoustic-mode modelling.">
+  <link rel="canonical"
+        href="https://jfj-russell.github.io/work/brillouin/">
+  <link rel="icon"
+        type="image/png"
+        sizes="512x512"
+        href="/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css?v=5">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+
+<body class="research-detail brillouin-page">
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/index.html">
+        <span>Jude</span> <span>Russell</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+              aria-label="Open navigation"
+              aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/index.html">Home</a>
+        <a href="/work/index.html" aria-current="page">Research</a>
+        <a href="/projects/index.html">Projects</a>
+        <a href="/cv/index.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <header class="page-intro">
+      <h1>Multimode Brillouin Scattering in Optical Fibre</h1>
+    </header>
+
+    <section class="article-section">
+      <p>This page provides a general overview of my MSc research in Brillouin scattering. The precise scope, methodology and findings of the project are not described here for confidentiality reasons.</p>
+
+      <h2>The spectrum</h2>
+
+      <p>Stimulated Brillouin scattering arises from the interaction of light with acoustic waves in an optical fibre. Although it is often described by a single resonance near 11 GHz, several closely spaced resonances can arise from different acoustic modes supported by the fibre.</p>
+
+      <p>My project investigated multimode Brillouin scattering in standard SMF-28 optical fibre. I measured a spectrum containing five neighbouring peaks separated by approximately 76–82 MHz. These measurements provided a basis for investigating the acoustic modes supported by the fibre.</p>
+    </section>
+
+    <figure class="media" data-fallback>
+      <img src="/assets/images/brillouin/spectrum.png"
+           alt="Measured multimode Brillouin spectrum with five fitted resonances">
+      <div class="asset-fallback">
+        Multimode Brillouin spectrum<br>
+        <small>assets/images/brillouin/spectrum.png</small>
+      </div>
+    </figure>
+
+    <section class="article-section">
+      <h2>Experiment</h2>
+
+      <p>A narrow-linewidth pump was sent through about 10 km of fibre. The backscattered light was mixed with a local oscillator and measured on a spectrum analyser, allowing several overlapping frequency windows to be combined into one spectrum. I fitted the peaks with Lorentzian lineshapes to characterise the resonances and their relative spacing.</p>
+    </section>
+
+    <figure class="media media--narrow" data-fallback>
+      <img src="/assets/images/brillouin/setup.png"
+           alt="Schematic of the heterodyne Brillouin scattering experiment">
+      <div class="asset-fallback">
+        Experimental setup schematic<br>
+        <small>assets/images/brillouin/setup.png</small>
+      </div>
+    </figure>
+
+    <section class="article-section">
+      <h2>Modelling the acoustic modes</h2>
+
+      <p>To understand the measured spectrum, I developed a simplified model of acoustic confinement in the fibre. The germania-doped core has a lower acoustic velocity than the surrounding silica, allowing it to guide several acoustic modes with different radial profiles.</p>
+
+      <p>Modelling the core with a gradually varying acoustic velocity produces an approximately equally spaced sequence of resonances, consistent with the measured spectrum. The model relates their spacing to the acoustic properties and effective guiding radius of the fibre.</p>
+    </section>
+
+    <figure class="media" data-fallback>
+      <img src="/assets/images/brillouin/modes.png"
+           alt="Calculated radial displacement profiles of four guided acoustic modes">
+      <div class="asset-fallback">
+        Calculated acoustic modes<br>
+        <small>assets/images/brillouin/modes.png</small>
+      </div>
+    </figure>
+
+    <section class="article-section">
+      <p>This work was supervised by Dr Michael Vanner in the <a href="https://www.qmeas.net" rel="external">Quantum Measurement Lab</a>. James Rose contributed to the numerical modelling through discussions and support with NumBAT.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© Jude Russell 2026</p>
+  </footer>
+
+</body>
+</html>
